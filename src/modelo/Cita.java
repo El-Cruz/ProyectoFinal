@@ -7,10 +7,10 @@ public class Cita {
 
     private LocalDateTime fechaHora;
     private String motivo;
-    private String medico;
-    private String paciente;
+    private Medico medico;
+    private Paciente paciente;
 
-    public Cita(LocalDateTime fechaHora, String motivo, String medico, String paciente) {
+    public Cita(LocalDateTime fechaHora, String motivo, Medico medico, Paciente paciente) {
         this.fechaHora = fechaHora;
         this.motivo = motivo;
         this.medico = medico;
@@ -25,11 +25,11 @@ public class Cita {
         return motivo;
     }
 
-    public String getMedico() {
+    public Medico getMedico() {
         return medico;
     }
 
-    public String getPaciente(){
+    public Paciente getPaciente(){
         return paciente;
     }
 }
